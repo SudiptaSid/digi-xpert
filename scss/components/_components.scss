@@ -1,0 +1,185 @@
+// Heading One
+.heading-one {
+    margin-bottom: 15px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0;
+        + p {
+            margin-top: 10px;
+        }
+    }
+    p {
+        margin-bottom: 0;
+        + .btn {
+            margin-top: 30px;
+        }
+    }
+}
+
+// Icon Info
+.icon-info {
+    position: relative;
+    padding-left: 100px;
+    margin-top: 50px;
+    img {
+        position: absolute;
+        left: 0;
+        max-width: 100%;
+        width: auto;
+    }
+    h4 {
+        margin-bottom: 5px;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+// CTA One
+.cta-one {
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% 100%;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        background-size: cover;
+    }
+    .heading-one {
+        margin-bottom: 0;
+        padding: 150px 0;
+        color: $white-clr;
+        max-width: 700px;
+        display: inline-block;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding: 50px 0;
+        }
+    }
+}
+
+// CTA Two
+.cta-two {
+    padding: 60px 0px;
+    background-color: lighten($black_clr, 98%);
+    text-align: center;
+    a {
+        font-size: 2.5em;
+        font-weight: bold;
+        line-height: 1.5;
+        display: inline-block;
+        color: $clr-c22329;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            font-size: 1.8em;
+        }
+    }
+}
+
+// Service Box
+.service-box {
+    background-color: lighten($black-clr, 98%);
+    border: 1px solid lighten($black-clr, 95%);
+    border-radius: 5px;
+    position: relative;
+    padding: 30px 20px;
+    height: 100%;
+    h4 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+            width: auto;
+            height: 60px;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+// Review Box
+.review-box {
+    position: relative;
+    .cs_profile {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        justify-content: center;
+        flex-direction: column;
+        .cs_avtr {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid lighten($black_clr, 90%);
+        }
+        h5 {
+            text-transform: capitalize;
+            margin-bottom: 0;
+            padding-left: 10px;
+            font-weight: 700;
+        }
+    }
+    .cs_cmnt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        img {
+            width: 30px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Divider
+.divider_s {
+    height: 1px;
+    margin: 40px 0px;
+    background: #f0f0f0;
+}
+
+// Breadcumb
+.breadcumb {
+    color: $black-clr;
+    font-size: 0.9em;
+    text-transform: capitalize;
+    margin: 30px 0px;
+    a {
+        color: $black-clr;
+        margin: 0px 5px;
+        font-weight: 700;
+    }
+    span {
+        color: $black-clr;
+        margin: 0px 5px;
+    }
+}
+
+// Inner Page Banner
+.inner-banner {
+    background-size: cover;
+    background-position: center center;
+    .caption {
+        padding: 100px 0px;
+        text-align: center;
+        h3 {
+            display: inline-block;
+            background-color: $white-clr;
+            padding: 10px 30px;
+            text-transform: capitalize;
+            border-left: 3px solid $black-clr;
+            margin: 0px;
+        }
+    }
+}

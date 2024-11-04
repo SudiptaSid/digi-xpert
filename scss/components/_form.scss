@@ -1,0 +1,23 @@
+// Form Control
+.form-control {
+    border: 1px solid lighten($black-clr, 94%);
+    border-radius: 0px;
+    padding: 10px 15px;
+    font-size: 1em;
+    &:focus {
+        border-color: $clr-0773bb;
+        outline: 0;
+        box-shadow: none !important;
+        box-shadow: 0 0 0 0.2rem rgba($clr-0773bb, 0.25);
+    }
+}
+textarea.form-control {
+    height: auto;
+}
+// Label
+label {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}

@@ -1,0 +1,187 @@
+// Banner
+.hero-banner {
+    position: relative;
+    .item {
+        padding: 150px 0px;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        color: $white;
+        .content {
+            min-height: 300px;
+        }
+        h1 {
+            font-weight: 600;
+        }
+    }
+    .owl-nav {
+        margin-top: 0;
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        button {
+            margin: 0;
+            border-radius: 0;
+            font-size: 1.5em;
+            line-height: 1;
+            background: transparent;
+            color: $white-clr;
+            position: absolute;
+            &:hover {
+                background-color: $no-clr !important;
+            }
+            &.owl-prev {
+                left: 20px;
+            }
+            &.owl-next {
+                right: 20px;
+            }
+        }
+    }
+    .owl-dots {
+        margin-top: 0;
+        opacity: 1;
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        width: 100%;
+        .owl-dot {
+            span {
+                margin: 0px 5px;
+                background-color: $black-clr;
+            }
+            &:hover {
+                span {
+                    background-color: $white-clr;
+                }
+            }
+            &.active {
+                span {
+                    background-color: $white-clr;
+                }
+            }
+        }
+    }
+}
+
+// Who We Are
+.who-we-are {
+    .gridi {
+        img {
+            height: 50px;
+            width: auto;
+        }
+        h5 {
+            margin: 10px 0;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+    .counter_wrap {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 30px;
+        li {
+            text-align: center;
+            img {
+                display: inline-block;
+                width: 60px;
+            }
+            .counter {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.5;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Why Us
+.why-us {
+    .heading-one {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+// Testimonial
+.client-testimonial {
+    padding: 60px 0;
+    background-color: lighten($black_clr, 98%);
+}
+
+// FAQs
+.faqs {
+    padding: 60px 0px;
+    .gridi {
+        margin-top: 10px;
+        p {
+            margin: 20px 0px;
+        }
+    }
+    .acc_title {
+        position: relative;
+        padding: 15px;
+        cursor: pointer;
+        background-color: lighten($black-clr, 98%);
+        border-bottom: 3px solid lighten($black-clr, 84%);
+        &:after {
+            content: "\f107";
+            font-family: "FontAwesome";
+            position: absolute;
+            line-height: 28px;
+            font-size: 1.4em;
+            text-align: center;
+            border-radius: 50%;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+        }
+        &.collapsed {
+            &:after {
+                content: "\f106";
+            }
+        }
+        h4 {
+            margin-bottom: 0px;
+            font-weight: 300;
+        }
+    }
+}
+
+// Contact Us Page
+.contact-us {
+    .contacts_txt {
+        p {
+            b {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Enquiry Page
+.enquiry-form {
+    .content {
+        padding: 50px;
+        max-width: 600px;
+        margin: auto;
+        border: 1px solid lighten($black-clr, 94%);
+        background-color: $white-clr;
+
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break-767) {
+            padding: 15px;
+        }
+    }
+}

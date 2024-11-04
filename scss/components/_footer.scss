@@ -1,0 +1,90 @@
+// Footer
+footer {
+    font-size: 0.8em;
+    .footer {
+        padding: 60px 0px;
+        background-color: $clr-262139;
+        color: $white-clr;
+        .f_logo {
+            margin-bottom: 20px;
+            display: inline-block;
+            img {
+                height: 60px;
+                width: auto;
+            }
+        }
+        h5 {
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            color: $white-clr;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        .f_links {
+            li {
+                margin-bottom: 10px;
+                a {
+                    color: $white-clr;
+                    text-transform: capitalize;
+                    &:hover {
+                        color: $clr-0773bb;
+                    }
+                }
+            }
+        }
+        .f_address {
+            li {
+                margin-bottom: 10px;
+                span {
+                    font-weight: 700;
+                    color: $white-clr;
+                }
+                a {
+                    color: $white-clr;
+                    &:hover {
+                        color: $clr-0773bb;
+                    }
+                }
+            }
+        }
+        .f_social {
+            li {
+                display: inline-block;
+                margin-right: 10px;
+                a {
+                    color: $white-clr;
+                    border: 1px solid darken($white-clr, 40%);
+                    background-color: transparent;
+                    width: 30px;
+                    height: 30px;
+                    display: block;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 30px;
+                    &:hover {
+                        color: $white-clr;
+                        border-color: $clr-0773bb;
+                        background-color: $clr-0773bb;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        padding: 15px 0px;
+        background-color: lighten($black-clr, 10%);
+        color: $white-clr;
+        text-align: center;
+        p {
+            margin-bottom: 0px;
+            a {
+                color: $white-clr;
+                font-weight: bold;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

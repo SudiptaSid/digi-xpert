@@ -1,0 +1,26 @@
+// Buttons
+.btn {
+    font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    color: $black-clr;
+    background-color: $clr-0773bb;
+    border: none;
+    border-radius: 0px;
+    &:hover,
+    &:focus {
+        color: $black-clr;
+        background-color: darken($clr-0773bb, 5%);
+        box-shadow: none;
+    }
+}
+.btn-main {
+    color: $white-clr;
+    background-color: $clr-0773bb;
+    &:hover {
+        color: $white-clr;
+        background-color: darken($clr-0773bb, 5%);
+    }
+}

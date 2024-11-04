@@ -1,0 +1,71 @@
+// Reset
+body {
+    font-family: $primary-ff;
+    font-size: $base-fz;
+    line-height: 1.8;
+    font-weight: 300;
+    color: $clr-333333;
+    background-color: $white-clr;
+    overflow-x: hidden;
+
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break-767) {
+        font-size: 14px;
+    }
+}
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    transition: 600ms;
+    &:hover {
+        text-decoration: none;
+    }
+}
+hr {
+}
+a,
+button,
+input,
+textarea,
+select {
+    &:focus,
+    &:hover,
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
+img {
+    width: 100%;
+}
